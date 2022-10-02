@@ -2,9 +2,8 @@ class Solution {
     public String truncateSentence(String s, int k) {
         int n = s.length(),count = 0, i;
         String res = "";
-        char[] str = s.toCharArray();
         for(i=0; i<n; i++){
-            if(str[i] == ' '){
+            if(s.charAt(i) == ' '){
                 count++;
             }
             if(count == k){
