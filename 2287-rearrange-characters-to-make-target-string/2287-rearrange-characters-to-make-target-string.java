@@ -11,7 +11,6 @@ class Solution {
         for(int i=0; i<n; i++){
             res = Math.min
                 (res, sfreq[target.charAt(i)-'a']/tfreq[target.charAt(i)-'a']);
-            System.out.println(res);
         }
         return res;
     }
