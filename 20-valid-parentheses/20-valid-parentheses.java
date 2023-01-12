@@ -9,14 +9,11 @@ class Solution {
             } else if(s.charAt(i) == '(' || 
                       s.charAt(i) == '{' || s.charAt(i) == '['){
                 st.push(s.charAt(i));
-               // System.out.println(st.peek());
             } else if(!st.isEmpty()) {
                 if((s.charAt(i) == ')' && st.peek() == '(') 
                    || (s.charAt(i) == '}' && st.peek() == '{') 
                    || (s.charAt(i) == ']' && st.peek() == '[')){
-                    //System.out.println(st.peek()+ " "+ s.charAt(i));
                     st.pop();
-                    
                 } else {
                     return false;
                 }
